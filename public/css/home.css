@@ -1,0 +1,39 @@
+body { 
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    url(https://th.bing.com/th/id/OIP.r1CJb11dRbQr0iv3e4iEPgHaE7?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center;  
+}
+
+.cover-container {
+    max-width: 60vw;
+}
+
+footer  {
+    margin-top: auto;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+/*     font-weight: 700; */
+    color: rgba(255,255,255,0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover { 
+    border-bottom-color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.5);
+}
+
+.nav-link.active {
+    color: white;
+    border-bottom-color: white;
+}
