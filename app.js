@@ -21,9 +21,6 @@ const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
 const MongoStore = require('connect-mongo');
 
-
-
-
 /* 
 npm install cloudinary@1.41.3 
 
@@ -36,7 +33,7 @@ crossorigin="anonymous"
 
 // connection to DB
 
-const dbUrl = 'mongodb://127.0.0.1:27017/yelp-camp'//process.env.DB_URL;
+const dbUrl = process.env.DB_URL //'mongodb://127.0.0.1:27017/yelp-camp'//process.env.DB_URL;
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
